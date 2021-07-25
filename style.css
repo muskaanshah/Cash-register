@@ -1,0 +1,36 @@
+body {
+	padding: 2%;
+}
+
+:root {
+	--primary-color: rgb(61, 28, 34);
+	--secondary-color: rgb(233, 203, 203);
+}
+
+#main {
+	width: 50%;
+	background-color: var(--primary-color);
+	padding: 4%;
+	color: white;
+}
+
+.para {
+	color: var(--secondary-color);
+	font-weight: 600;
+	font-size: 20px;
+}
+
+input[type="number"] {
+	width: 80%;
+	padding: 1.5%;
+}
+
+button {
+	padding: 1%;
+	width: 20%;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-size: 120%;
+	font-weight: 500;
+	border: none;
+}
