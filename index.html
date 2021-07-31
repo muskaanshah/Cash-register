@@ -14,27 +14,42 @@
     <div class="container-fluid text-center" id="main">
         <h3 class="pb-3">Cash Register Manager</h3>
         <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-        <p class="para">Enter bill amount:</p><input type="number" id="bill"><br><br>
+
+        <p class="label">Enter bill amount:</p>
+        <input type="number" id="bill"><br><br>
         <button id="next">Next</button><br><br>
         <div id="outputBill"></div>
+
         <div id="checkDiv" style="display: none;">
-            <p class="para">Enter cash given:</p><input type="number" id="cash"><br><br>
+            <p class="label">Enter cash given:</p>
+            <input type="number" id="cash"><br><br>
             <button id="check">Check</button><br><br>
         </div>
         <div id="outputCheck"></div>
-        <div class="new"></div>
+        <table class="change-return" style="display: none;">
+            <tr>
+                <th style="background-color: var(--secondary-color);">No. of Notes</th>
+                <th class="noofnotes"></th>
+                <th class="noofnotes"></th>
+                <th class="noofnotes"></th>
+                <th class="noofnotes"></th>
+                <th class="noofnotes"></th>
+                <th class="noofnotes"></th>
+                <th class="noofnotes"></th>
+            </tr>
+            <tr>
+                <th style="background-color: var(--secondary-color);">Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
     </div>
-
     <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -8,13 +8,13 @@ body {
 }
 
 #main {
-	width: 50%;
+	width: 50vw;
 	background-color: var(--primary-color);
 	padding: 4%;
 	color: white;
 }
 
-.para {
+.label {
 	color: var(--secondary-color);
 	font-weight: 600;
 	font-size: 20px;
@@ -33,4 +33,23 @@ button {
 	font-size: 120%;
 	font-weight: 500;
 	border: none;
+}
+
+table {
+	border: 1px solid var(--primary-color);
+	background-color: white;
+	width: 100%;
+	border-collapse: collapse !important;
+}
+
+td,
+tr,
+th {
+	padding: 10px;
+	margin: 2%;
+	color: var(--primary-color);
+}
+
+td {
+	background-color: var(--secondary-color);
 }
