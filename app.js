@@ -14,7 +14,7 @@ var notesavailable = [2000, 500, 100, 20, 10, 5, 1];
 
 function validate1() {
     errorBill.style.display = "none";
-    if (billamt.value <=0) {
+    if (Number(billamt.value) <=0) {
         errorBill.innerText = "Enter valid bill amount";
         errorBill.style.display = "block";
     }
@@ -26,14 +26,14 @@ function validate1() {
 function validate2() {
     tablereturnchange.style.display = "none";
     errorCheck.style.display = "block";
-    if (cashamt.value < billamt.value) {
+    if (Number(cashamt.value) < Number(billamt.value)) {
         errorCheck.innerText = "Sorry! Cash given lesser than bill amount";
     }
-    else if (cashamt.value <=0 || billamt.value <=0 )
+    else if (Number(cashamt.value) <=0 || Number(billamt.value) <=0 )
     {
         errorCheck.innerText = "Sorry! Invalid cash or bill amount";
     }
-    else if (cashamt.value == billamt.value)
+    else if (Number(cashamt.value) == Number(billamt.value))
     {
         errorCheck.innerText = "No change to be returned";
     }
