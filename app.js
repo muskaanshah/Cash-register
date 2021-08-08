@@ -14,9 +14,11 @@ var notesavailable = [2000, 500, 100, 20, 10, 5, 1];
 
 function validate1() {
     errorBill.style.display = "none";
+    document.getElementsByTagName("img")[0].style.display="none";
     if (Number(billamt.value) <=0) {
         errorBill.innerText = "Enter valid bill amount";
         errorBill.style.display = "block";
+        document.getElementsByTagName("img")[0].style.display="block";
     }
     else {
         document.getElementById("checkDiv").style.display = "block";
@@ -26,6 +28,7 @@ function validate1() {
 function validate2() {
     tablereturnchange.style.display = "none";
     errorCheck.style.display = "block";
+    document.getElementsByTagName("img")[1].style.display="block";
     if (Number(cashamt.value) < Number(billamt.value)) {
         errorCheck.innerText = "Sorry! Cash given lesser than bill amount";
     }
@@ -39,6 +42,7 @@ function validate2() {
     }
     else {
         errorCheck.style.display = "none";
+        document.getElementsByTagName("img")[1].style.display="none";
         tablereturnchange.style.display = "inline-table";
         changetoreturn = cashamt.value - billamt.value;
         amountreturned(changetoreturn);

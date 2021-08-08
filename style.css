@@ -53,3 +53,8 @@ th {
 td {
 	background-color: var(--secondary-color);
 }
+
+img {
+	width: 50%;
+	margin: auto;
+}
