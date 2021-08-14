@@ -41,11 +41,11 @@ function validate2() {
         errorCheck.innerText = "No change to be returned";
     }
     else {
-        errorCheck.style.display = "none";
         document.getElementsByTagName("img")[1].style.display="none";
         tablereturnchange.style.display = "inline-table";
         changetoreturn = cashamt.value - billamt.value;
         amountreturned(changetoreturn);
+        errorCheck.innerText = "Change to be returned is ₹" + changetoreturn;
     }
 }
 
