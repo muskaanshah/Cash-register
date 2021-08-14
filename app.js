@@ -45,7 +45,7 @@ function validate2() {
         tablereturnchange.style.display = "inline-table";
         changetoreturn = cashamt.value - billamt.value;
         amountreturned(changetoreturn);
-        errorCheck.innerText = "Change to be returned is ₹" + changetoreturn;
+        errorCheck.innerText = "₹" + changetoreturn + " has to be returned.";
     }
 }
 
